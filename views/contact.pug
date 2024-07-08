@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/style.css')
+  body
+    header 
+         nav
+            ul#nvul 
+                li#navli
+                     a(href="/") home 
+                li#navli 
+                    a(href="/services") services 
+                li#navli
+                    a(href="/contact") contact 
+    main
+      h1 Contactez-nous
+      form( method='post')
+        label(for='name') Nom :
+        input(type='text', id='name', name='name')
+        br
+        label(for='email') Email :
+        input(type='email', id='email', name='email')
+        br
+        label(for='message') Message :
+        textarea(id='message', name='message')
+        br
+        button(type='submit') Envoyer
